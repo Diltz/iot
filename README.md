@@ -10,3 +10,5 @@ This would help novice developers to learn how to use HTTP properly for example
 
 ## Licensing information
 **We using MIT license** if you planning to use some of this codebase, you must credit us
+
+Examples stored at modules
