@@ -2,7 +2,7 @@
 Our modules written on **RLUA** for our products.
 
 ## Why we decided to release this?
-This would help beginning developers to study on how to use HTTP for example
+This would help novice developers to learn how to use HTTP properly for example
 
 ## Release contains
 - HTTP Module (that we use for contacting our licensing server)
