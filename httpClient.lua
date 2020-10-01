@@ -50,3 +50,19 @@ function client:GET(link) --// usage module:GET("https://example.com")
 end
 
 return client
+
+--[[EXAMPLE USAGE
+    local HttpClient = require(5768189528)
+    
+    -- GET
+	local GET_REQUEST = HttpClient:GET("https://example.com")
+    print(GET_REQUEST) --// html body
+    
+    -- POST
+	local POST_REQUEST = HttpClient:POST("http://diltzhost:1111/api/send",{foo="bar"})
+	print(POST_REQUEST) -- diltz.xyz returns JSON, http module converted into Array
+	
+	for k,v in pairs(POST_REQUEST) do
+		warn(k,v) --// hello from diltz!
+	end
+]]
