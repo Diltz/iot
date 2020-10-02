@@ -4,21 +4,21 @@ local MarketplaceService = game:GetService("MarketplaceService")
 
 local PlaceInfo = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
-local HttpRequest_GET = function(Link)
-	warn("Link: " .. Link)
+local HttpRequest_GET = function(Link) -- HTTP GET
+	warn("Link: " .. Link) -- debug info
 	local toReturn
 	--return HttpService:JSONDecode(HttpService:GetAsync(Link)).ownership
 	
 	local success,error = pcall(function()
-		toReturn = HttpService:JSONDecode(HttpService:GetAsync(Link)).ownership
+		toReturn = HttpService:JSONDecode(HttpService:GetAsync(Link)).ownership -- true or false
 	end)
 
-	warn(toReturn)
+	warn(toReturn) -- debug info
 
 	if error == nil then
-		return toReturn
+		return toReturn -- whitelist response
 	else
-		return "Server offline"
+		return "Server offline" -- unable to connect server
 	end
 end
 
@@ -31,7 +31,7 @@ if PlaceInfo.Creator.CreatorType == "Group" then
 
 	if WhitelistedAsCreatorGroup == false or WhitelistedAsCreatorGroup == "Server offline" then
 		if WhitelistedGroup == false or WhitelistedGroup == "Server offline" then
-			error("IOT API: Not Whitelisted")
+			error("IOT API: Not Whitelisted") -- error prevents script from running
 		else
 			Whitelisted = "Group"
 		end
