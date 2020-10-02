@@ -1,5 +1,5 @@
 # IOT
-Our modules written on **RLUA** for our products.
+Our scripts written on **RLUA** for our products.
 
 ## Why we decided to release this?
 This would help novice developers to learn how to use HTTP properly for example
