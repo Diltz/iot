@@ -1,3 +1,7 @@
+--// IOT
+-- written by diltz, licensed under MIT, if you using some of this codebase you must credit IOT
+-- NOT RECOMMENDED TO USE THIS WHITELIST HAVE VULNERABILITIES
+
 warn("Loading IOT whitelist api")
 local HttpService = game:GetService("HttpService")
 local MarketplaceService = game:GetService("MarketplaceService")
