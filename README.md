@@ -10,6 +10,6 @@ This would help novice developers to learn how to use HTTP properly for example
 - Our decent whitelist code (We do not use it anymore, we have writtent more imporved & secured)
 
 ## Licensing information
-**We using MIT license** if you planning to use some of this codebase, you must credit us
+**GNU General Public License v2.0** if you planning to use some of this codebase, you must credit us
 
 Examples stored at modules
