@@ -1,5 +1,5 @@
 --// IOT
--- written by diltz, licensed under MIT, if you using some of this codebase you must credit IOT
+-- written by diltz, licensed under GNU General Public License v2.0, if you using some of this codebase you must credit IOT
 
 local HttpService = game:GetService("HttpService")
 local client = {}
